@@ -1,0 +1,52 @@
+.btn {
+  display: inline-block;
+  font-family: $ubuntu;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 18px;
+  color: $white;
+  background-color: $green;
+  border-radius: 4px;
+  box-shadow: 0 9px 15px 1px rgba(62, 196, 73, 0.18);
+  padding: 19px 50px;
+  border: 0;
+  cursor: pointer;
+
+  &:active,
+  &:hover {
+    background-color: #40d14c;
+  }
+
+  &:active {
+    // color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--yellow {
+    color: $grey;
+    background-color: $yellow;
+    padding: 19px 33px;
+box-shadow: none;
+    &:active,
+    &:hover {
+      background-color: #ffe139;
+      box-shadow: 0 9px 15px 1px rgba(248, 215, 28, 0.12);
+    }
+  }
+
+  &--white {
+    color: $green;
+    background-color: $white;
+    border: 1px solid #39bb44;
+    padding: 18px 50px;
+    box-shadow: none;
+
+    &:active,
+    &:hover {
+      color: $white;
+      background-color: $green;
+    }
+  }
+}

@@ -2,20 +2,25 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "scaffolding.scss";
-// @import "blocks/page-header.scss";
-// @import "blocks/main-nav.scss";
-// @import "blocks/page-main.scss";
-// @import "blocks/btn.scss";
-// @import "blocks/promo.scss";
-// @import "blocks/catalog.scss";
-// @import "blocks/advantages.scss";
-// @import "blocks/example.scss";
-// @import "blocks/example-range.scss";
-// @import "blocks/contacts.scss";
-// @import "blocks/page-footer.scss";
-// @import "blocks/footer-logo.scss";
-// @import "blocks/footer-social.scss";
-// @import "blocks/footer-copyright.scss";
+@import "btn.scss";
+@import "blocks/header.scss";
+
+@import "blocks/main-nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/recall.scss";
+@import "blocks/product.scss";
+@import "blocks/about-us.scss";
+@import "blocks/how-it-work.scss";
+@import "blocks/example.scss";
+@import "blocks/plan.scss";
+@import "blocks/contact.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+
+@import "blocks/modal-form.scss";
+@import "blocks/modal-form-done.scss";
+@import "blocks/modal-recall.scss";
+@import "blocks/modal-overlay.scss";
 //
 // @import "blocks/product.scss";
 // @import "blocks/show-more.scss";
