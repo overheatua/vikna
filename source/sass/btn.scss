@@ -1,4 +1,5 @@
 .btn {
+  width: 100%;
   display: inline-block;
   font-family: $ubuntu;
   text-align: center;
@@ -11,9 +12,10 @@
   background-color: $green;
   border-radius: 4px;
   box-shadow: 0 9px 15px 1px rgba(62, 196, 73, 0.18);
-  padding: 19px 50px;
+  padding: 19px 10px;
   border: 0;
   cursor: pointer;
+  transition: all .3s;
 
   &:active,
   &:hover {
@@ -23,7 +25,7 @@
   &--yellow {
     color: $grey;
     background-color: $yellow;
-    padding: 19px 33px;
+    padding: 19px 10px;
     box-shadow: none;
 
     &:active,
@@ -37,7 +39,7 @@
     color: $green;
     background-color: $white;
     border: 1px solid #39bb44;
-    padding: 18px 50px;
+    padding: 18px 10px;
     box-shadow: none;
 
     &:active,

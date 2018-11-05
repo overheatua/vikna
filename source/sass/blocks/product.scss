@@ -13,7 +13,7 @@
   }
 
   &__nav {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 
   &__brand-list {
@@ -49,13 +49,69 @@
   }
 
   &__slider {
+    display: none;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 35px;
+
+    .slick-track {
+      display: flex;
+    }
+
+    .slick-slide {
+      float: none;
+      height: auto;
+    }
+
+    .slick-arrow {
+      border: none;
+      font-size: 0;
+      background-color: transparent;
+      width: 12px;
+      height: 30px;
+      background-image: url(../img/icon-left_arrow.svg);
+      outline: none;
+      position: absolute;
+      top: calc(50% - 15px);
+      cursor: pointer;
+      z-index: 4;
+    }
+
+    .slick-prev {
+      left: 15px;
+
+      @media (min-width: 768px) {
+        left: -7px;
+      }
+    }
+
+    .slick-next {
+      transform: rotate(180deg);
+      right: 15px;
+
+      @media (min-width: 768px) {
+        right: -7px;
+      }
+    }
+  }
+
+  &__list {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+
+    @media (min-width: 768px) {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    @media (min-width: $desktop) {
+      width: calc(100% + 30px);
+      margin-left: -15px;
+    }
   }
 
   &__item {
-    margin: 0 auto;
-    display: flex;
+    margin: 15px 35px;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -64,6 +120,21 @@
     min-height: 450px;
     box-shadow: 0 4px 20px rgba(195, 195, 195, 0.33);
     background-color: #ffffff;
+    outline: none;
+
+    @media (min-width: 375px) {
+      margin: 15px 45px;
+    }
+
+    @media (min-width: 768px) {
+      margin: 15px 13px;
+    }
+  }
+
+  &__item-text {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 14px;
   }
 
   &__item-img {
@@ -77,11 +148,12 @@
     font-weight: 500;
     line-height: 24px;
     text-transform: none;
+    margin-bottom: 17px;
   }
 
   &__item-desc {
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   &__item-price {
@@ -115,6 +187,11 @@
     width: 270px;
   }
 }
+
+.product__slider1 {
+  display: block;
+}
+
 @media (min-width: $desktop) {
   .product {
     &__wrapper {
@@ -148,23 +225,6 @@
 
     &__slider {
       margin-bottom: 60px;
-    }
-
-    &__list {
-      display: flex;
-      flex-wrap: nowrap;
-    }
-
-    &__item {
-      margin-right: 26px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-
-    &__slider-controls {
-      display: none;
     }
 
     &__call-img {
