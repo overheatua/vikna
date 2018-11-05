@@ -53,8 +53,8 @@ $(document).ready(function() {
     $(".js-btn-3").addClass("product__type-link--curent");
     $(".product__slider").hide();
     $(".product__slider1").show();
-    $('.product__list').slick('destroy');
-    $('.js-slider-1').slick('reinit');
+    $('.product__list').slick('unslick');
+    $('.js-slider-1').slick(options);
   });
 
   $('.js-btn-2').on('click', function(e) {
@@ -65,8 +65,8 @@ $(document).ready(function() {
     $(".js-btn-3").addClass("product__type-link--curent");
     $(".product__slider").hide();
     $(".product__slider3").show();
-    $('.product__list').slick('destroy');
-    $('.js-slider-3').slick('reinit');
+    $('.product__list').slick('unslick');
+    $('.js-slider-3').slick(options);
   });
 
   $('.js-btn-3').on('click', function(e) {
@@ -74,14 +74,13 @@ $(document).ready(function() {
     $(".product__type-link").removeClass("product__type-link--curent");
     $(this).addClass("product__type-link--curent");
     $(".product__slider").hide();
+    $('.product__list').slick('unslick');
     if ($('.js-btn-1').hasClass('product__brand-link--curent')) {
       $(".product__slider1").show();
-      $('.product__list').slick('destroy');
-      $('.js-slider-1').slick('reinit');
+      $('.js-slider-1').slick(options);
     } else {
       $(".product__slider3").show();
-      $('.product__list').slick('destroy');
-      $('.js-slider-3').slick('reinit');
+      $('.js-slider-3').slick(options);
     }
   });
 
@@ -90,20 +89,19 @@ $(document).ready(function() {
     $(".product__type-link").removeClass("product__type-link--curent");
     $(this).addClass("product__type-link--curent");
     $(".product__slider").hide();
+    $('.product__list').slick('unslick');
     if ($('.js-btn-1').hasClass('product__brand-link--curent')) {
       $(".product__slider2").show();
-      $('.product__list').slick('destroy');
-      $('.js-slider-2').slick('reinit');
+      $('.js-slider-2').slick(options);
     } else {
       $(".product__slider4").show();
-      $('.product__list').slick('destroy');
-      $('.js-slider-4').slick('reinit');
+      $('.js-slider-4').slick(options);
     }
   });
 
   $('.example__list').slick();
 
-  $('.js-slider-1').slick({
+  var options = {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -132,99 +130,10 @@ $(document).ready(function() {
         }
       }
     ]
-  });
+  }
 
-  $('.js-slider-2').slick({
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: false,
-    infinite: false,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          arrows: true
-        }
-      },
-      {
-        breakpoint: 850,
-        settings: {
-          slidesToShow: 2,
-          arrows: true
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          arrows: true
-        }
-      }
-    ]
-  });
-
-  $('.js-slider-3').slick({
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: false,
-    infinite: false,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          arrows: true
-        }
-      },
-      {
-        breakpoint: 850,
-        settings: {
-          slidesToShow: 2,
-          arrows: true
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          arrows: true
-        }
-      }
-    ]
-  });
-
-  $('.js-slider-4').slick({
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    arrows: false,
-    infinite: false,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-          arrows: true
-        }
-      },
-      {
-        breakpoint: 850,
-        settings: {
-          slidesToShow: 2,
-          arrows: true
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          arrows: true
-        }
-      }
-    ]
-  });
-
+  $('.js-slider-1').slick(options);
+  $('.js-slider-2').slick(options);
+  $('.js-slider-3').slick(options);
+  $('.js-slider-4').slick(options);
 });

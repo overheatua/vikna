@@ -59,6 +59,7 @@
       position: absolute;
       top: calc(50% - 15px);
       cursor: pointer;
+      z-index: 4;
 
       @media (min-width: $desktop) {
         width: 24px;
