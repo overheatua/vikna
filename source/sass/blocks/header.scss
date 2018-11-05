@@ -1,0 +1,14 @@
+.header {
+  position: fixed;
+  top: 0;
+    left: 0;
+    right: 0;
+  box-shadow: 0 6px 10px rgba(195, 195, 195, 0.15);
+  background-color: #ffffff;
+  z-index: 3;
+}
+@media (min-width: $desktop) {
+  .header {
+    position: static;
+  }
+}

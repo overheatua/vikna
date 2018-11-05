@@ -1,0 +1,73 @@
+.recall {
+  padding: 25px 0;
+
+  &__title {
+    margin: 0;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin: 0 0 21px;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+  }
+
+  #phone-number {
+    width: 219px;
+    flex-grow: 1;
+    max-width: 270px;
+    margin-right: 5px;
+  }
+
+  &__btn {
+    width: 70px;
+    font-size: 0;
+    background-image: url("../img/s-icon-plane.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+  }
+}
+@media (min-width: $desktop) {
+  .recall {
+    padding: 0;
+    &__wrapper {
+      min-height: 120px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__desc {
+      width: 600px;
+    }
+
+    &__title {
+      line-height: 40px;
+      margin: 0;
+    }
+
+    &__text {
+      margin: 0;
+    }
+
+    &__btn {
+      width: 200px;
+      color: #4b4b4b;
+      font-family: $ubuntu;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      background-image: none;
+      padding: 19px 32px;
+      margin-left: 5px;
+    }
+  }
+}

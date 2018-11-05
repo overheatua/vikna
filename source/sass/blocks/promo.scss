@@ -1,0 +1,88 @@
+.promo {
+  background-color: #f9f9f9;
+  background: url("../img/promo-bg.jpg") center no-repeat;
+  background-size: cover;
+  background-position: -150px 0;
+
+  &__wrapper {
+    margin-top: 70px;
+    min-height: 407px;
+    padding: 55px 0;
+  }
+
+  &__title {
+    margin: 0 0 14px;
+    line-height: 36px;
+  }
+
+  &__text {
+    margin: 0 0 30px;
+  }
+
+  &__btn {
+    width: 270px;
+    margin-bottom: 47px;
+  }
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+  }
+
+  &__desc {
+    opacity: 0.4;
+    color: #212121;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 19px;
+  }
+
+  &__brand-img {
+    margin-right: 26px;
+  }
+}
+@media (min-width: $desktop) {
+  .promo {
+    background: url("../img/promo-bg.jpg") top no-repeat;
+
+    &__wrapper {
+      min-height: 715px;
+      background: none;
+      padding: 104px 0 81px;
+      margin-top: 0;
+    }
+
+    &__title {
+      width: 600px;
+      font-size: 44px;
+      font-weight: 700;
+      line-height: 56px;
+      margin-bottom: 34px;
+    }
+
+    &__text {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+
+    &__btn {
+      margin-bottom: 75px;
+    }
+
+    &__brand {
+      flex-wrap: wrap;
+    }
+
+    &__desc {
+      width: 100%;
+      margin-bottom: 11px;
+    }
+
+    &__brand-img {
+      margin-right: 36px;
+    }
+  }
+}

@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Vikna</title>
 </head>
@@ -15,231 +16,357 @@
     <include src="build/img/sprite.svg"></include>
   </div>
   <header class="header">
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Цены</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Преимущества</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Как заказать</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Наши работы</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__menu-wrapper">
+          <div class="main-nav__menu-logo">
+            <a href="#" class="main-nav__logo">
+              <img class="main-nav__logo-img" src="img/vikna-logo.svg" alt="vikna logo">
+            </a>
+          </div>
+          <div class="main-nav__telephone">
+            <a href="tel:+380633734567" class="contact__mobile main-nav__mobile">+38 (063) 373 45 67</a>
+            <a href="tel:+380503734567" class="contact__mobile main-nav__mobile">+38 (050) 373 45 67</a>
+          </div>
+          <div class="main-nav__service">
+            <a href="#" class="main-nav__service-calculate">
+              <span class="main-nav__service-text">Рассчитать стоимость</span>
+            </a>
+            <a href="#" class="main-nav__service-call">
+              <span class="main-nav__service-text">Вызвать замерщика</span>
+            </a>
+          </div>
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+        </div>
+        <div class="main-nav__menu">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Цены</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Преимущества</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Как заказать</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Наши работы</a></li>
+            <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+          </ul>
+          <div class="main-nav__footer">
+            <div class="main-nav__footer-wrapper">
+              <a href="tel:+380633734567" class="contact__mobile main-nav__mobile">+38 (063) 373 45 67</a>
+              <a href="tel:+380503734567" class="contact__mobile main-nav__mobile">+38 (050) 373 45 67</a>
+            </div>
+            <button class="contact__btn main-nav__btn btn btn--white" type="button" name="button">обратный звонок</button>
+          </div>
+        </div>
+      </nav>
+    </div>
   </header>
   <main>
     <section class="promo">
-      <h1 class="promo__title">Лучшие цены на пластиковые окна</h1>
-      <p class="promo__text">Покупайте окна выгодно и без хлопот</p>
-      <a href="" class="promo__link btn">Вызвать замерщика</a>
-      <div class="promo__brand">
-        <span class="promo__desc">наши бренды</span>
-        <img src="../img/rehau.png" alt="Rehau" class="promo__brand-img">
-        <img src="../img/veka.png" alt="Veka" class="promo__brand-img">
+      <div class="container">
+        <div class="promo__wrapper">
+          <h1 class="promo__title">Лучшие цены на пластиковые окна</h1>
+          <p class="promo__text">Покупайте окна выгодно и без хлопот</p>
+          <a href="" class="promo__btn btn">Вызвать замерщика</a>
+          <div class="promo__brand">
+            <span class="promo__desc">наши бренды</span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/rehau-desktop.png">
+              <img src="img/rehau.png" alt="Rehau" class="promo__brand-img">
+            </picture>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/veka-desktop.png">
+              <img src="img/veka.png" alt="Veka" class="promo__brand-img">
+            </picture>
+          </div>
+        </div>
       </div>
     </section>
     <section class="recall">
-      <h1 class="visually-hidden"></h1>
-      <h2 class="recall__title">Нет времени или возможности перезвонить?</h2>
-      <p class="recall__text">Оставьте номер телефона и мы свяжемся с вами в течении 15 минут.</p>
-      <form action="post">
-        <input type="text" id="phone-number">
-        <button class="recall__btn btn btn--yellow" type="submit">Отправить</button>
-      </form>
-    </section>
-    <section class="product">
-      <h1 class="product__title">Наша продукция и цены</h1>
-      <div class="product__nav">
-        <ul class="product__brand-list">
-          <li class="product__brand-item"><a href="" class="product__brand-link">Rehau</a></li>
-          <li class="product__brand-item"><a href="" class="product__brand-link">Veka</a></li>
-        </ul>
-        <ul class="product__type-list">
-          <li class="product__type-item"><a href="" class="product__type-link">Окно из двух частей</a></li>
-          <li class="product__type-item"><a href="" class="product__type-link">Окно из трех частей</a></li>
-        </ul>
-      </div>
-      <div class="product__slider">
-        <ul class="product__list">
-          <li class="product__item">
-            <img src="../img/item-img.jpg" alt="Rehau Ecosol-Design 60" class="product__item-img">
-            <h2 class="product__item-title">Rehau Ecosol-Design 60</h2>
-            <div class="product__item-desc">
-              <p class="product__item-text">Камер: 3</p>
-              <p class="product__item-text">Стеклопакет: однокамерный, двухкамерный</p>
-              <p class="product__item-text">Монтажная глубина: 60 мм</p>
-              <p class="product__item-text">Теплоизоляция: 0,65м2°С/Вт</p>
-              <p class="product__item-text">Цена: от <span class="product__item-price">2 303</span> грн</p>
+      <div class="container">
+        <div class="recall__wrapper">
+          <div class="recall__desc">
+            <h2 class="recall__title">Нет времени или возможности перезвонить?</h2>
+            <p class="recall__text">Оставьте номер телефона и мы свяжемся с вами в течении 15 минут.</p>
+          </div>
+          <form action="post">
+            <div class="recall__form">
+              <input type="text" id="phone-number" placeholder="+38 063 373 18 66">
+              <button class="recall__btn btn btn--yellow" type="submit">Оставить заявку</button>
             </div>
-            <button class="product__item-btn btn btn--white" type="button" name="button">Оставить заявку</button>
-          </li>
-        </ul>
-        <div class="product__slider-controls">
-          <span class="product__slider-left-btn">Влево</span>
-          <span class="product__slider-right-btn">Вправо</span>
+          </form>
         </div>
       </div>
-      <div class="product__call">
-        <img src="../img/master-img.jpg" alt="master" class="product__call-img">
-        <p class="product__call-text">Стоимость монтажа 375 грн. Цена окна с фурнитурой Axor (так же устанавливаются Siegenia, Winkhaus и Maco). Доставка в приделах города и замер бесплатные.</p>
-        <a href="" class="product__call-btn btn">Вызвать замерщика</a>
+    </section>
+    <section class="product">
+      <div class="container">
+        <div class="product__wrapper">
+          <h1 class="product__title">Наша продукция и цены</h1>
+          <div class="product__nav">
+            <ul class="product__brand-list">
+              <li class="product__brand-item"><a href="" class="product__brand-link product__brand-link--curent">Rehau</a></li>
+              <li class="product__brand-item"><a href="" class="product__brand-link">Veka</a></li>
+            </ul>
+            <ul class="product__type-list">
+              <li class="product__type-item"><a href="" class="product__type-link product__type-link--curent">Окно из двух частей</a></li>
+              <li class="product__type-item"><a href="" class="product__type-link">Окно из трех частей</a></li>
+            </ul>
+          </div>
+          <div class="product__slider">
+            <ul class="product__list">
+              <li class="product__item">
+                <img src="../img/product-item-1.jpg" alt="Rehau Ecosol-Design 60" class="product__item-img">
+                <h2 class="product__item-title">Rehau Ecosol-Design 60</h2>
+                <div class="product__item-desc">
+                  <p class="product__item-text">Камер: 3</p>
+                  <p class="product__item-text">Стеклопакет: однокамерный, двухкамерный</p>
+                  <p class="product__item-text">Монтажная глубина: 60 мм</p>
+                  <p class="product__item-text">Теплоизоляция: 0,65м2°С/Вт</p>
+                  <p class="product__item-text">Цена: от <span class="product__item-price">2 303</span> грн</p>
+                </div>
+                <button class="product__item-btn btn btn--white" type="button" name="button">Оставить заявку</button>
+              </li>
+              <li class="product__item">
+                <img src="../img/product-item-2.jpg" alt="Rehau Ecosol-Design 60" class="product__item-img">
+                <h2 class="product__item-title">Rehau Ecosol-Design 60</h2>
+                <div class="product__item-desc">
+                  <p class="product__item-text">Камер: 5</p>
+                  <p class="product__item-text">Стеклопакет: однокамерный, двухкамерный</p>
+                  <p class="product__item-text">Монтажная глубина: 70 мм</p>
+                  <p class="product__item-text">Теплоизоляция: 0,8м2°С/Вт</p>
+                  <p class="product__item-text">Цена: от <span class="product__item-price">2 669</span> грн</p>
+                </div>
+                <button class="product__item-btn btn btn--white" type="button" name="button">Оставить заявку</button>
+              </li>
+              <li class="product__item">
+                <img src="../img/product-item-3.jpg" alt="Rehau Ecosol-Design 60" class="product__item-img">
+                <h2 class="product__item-title">Rehau Synego</h2>
+                <div class="product__item-desc">
+                  <p class="product__item-text">Камер: 7</p>
+                  <p class="product__item-text">Стеклопакет: двухкамерный</p>
+                  <p class="product__item-text">Монтажная глубина: 80 мм</p>
+                  <p class="product__item-text">Теплоизоляция: 1м2°С/Вт</p>
+                  <p class="product__item-text">Цена: от <span class="product__item-price">4 263</span> грн</p>
+                </div>
+                <button class="product__item-btn btn btn--white" type="button" name="button">Оставить заявку</button>
+              </li>
+              <li class="product__item">
+                <img src="../img/product-item-4.jpg" alt="Rehau Ecosol-Design 60" class="product__item-img">
+                <h2 class="product__item-title">Rehau Geneo</h2>
+                <div class="product__item-desc">
+                  <p class="product__item-text">Камер: 7</p>
+                  <p class="product__item-text">Стеклопакет: двухкамерный</p>
+                  <p class="product__item-text">Монтажная глубина: 85 мм</p>
+                  <p class="product__item-text">Теплоизоляция: 1,16м2°С/Вт</p>
+                  <p class="product__item-text">Цена: от <span class="product__item-price">5 053</span> грн</p>
+                </div>
+                <button class="product__item-btn btn btn--white" type="button" name="button">Оставить заявку</button>
+              </li>
+            </ul>
+            <div class="product__slider-controls">
+              <span class="product__slider-left-btn">Влево</span>
+              <span class="product__slider-right-btn">Вправо</span>
+            </div>
+          </div>
+          <div class="product__call">
+            <img src="../img/master-img.png" alt="master" class="product__call-img">
+            <p class="product__call-text">Стоимость монтажа <b>375</b> грн. Цена окна с фурнитурой Axor (так же устанавливаются Siegenia, Winkhaus и Maco). Доставка в приделах города и замер <b>бесплатные</b>.</p>
+            <a href="" class="product__call-btn btn">Вызвать замерщика</a>
+          </div>
+        </div>
       </div>
     </section>
     <section class="about-us">
-      <h1 class="about-us__title">о нашей компании и производстве</h1>
-      <p class="about-us__text">Приветствуем Вас на сайте компании «Vikna»!</p>
-      <p class="about-us__text">Мы занимаемся продажей и установкой пластиковых окон, изготовлением оконных конструкций на заказ.</p>
-      <p class="about-us__text">Заказывая у нас, Вы получаете весь спектр услуг, начиная с замера и монтажа и заканчивая диагностикой, ремонтом и обслуживанием Ваших конструкций.</p>
-      <ul class="about-us__features-list">
-        <li class="about-us__features-item">
-          <img src="../img/icon-cube.svg" alt="cube" class="about-us__features-img">
-          <h2 class="about-us__features-title">Безупречное качество</h2>
-          <p class="about-us__features-text">Предоставляем гарантию 50 лет на профиль, 10 лет на стеклопакет и 5 лет на монтаж.</p>
-        </li>
-        <li class="about-us__features-item">
-          <img src="../img/icon-time.svg" alt="time" class="about-us__features-img">
-          <h2 class="about-us__features-title">Кратчайшие сроки</h2>
-          <p class="about-us__features-text">Изготовим и доставим ваши окна через 7 дней после оформления заказа.</p>
-        </li>
-        <li class="about-us__features-item">
-          <img src="../img/icon-rules.svg" alt="rules" class="about-us__features-img">
-          <h2 class="about-us__features-title">Бесплатное обслуживание</h2>
-          <p class="about-us__features-text">Изготовим и доставим ваши окна через 7 дней после оформления заказа.</p>
-        </li>
-        <li class="about-us__features-item">
-          <img src="../img/icon-home.svg" alt="home" class="about-us__features-img">
-          <h2 class="about-us__features-title">Договор на дому</h2>
-          <p class="about-us__features-text">Вам не нужно никуда ехать! Мы приедем к Вам сами со всеми необходимыми документами.</p>
-        </li>
-      </ul>
-      <button class="about-us__btn btn btn--white">заказать обратный звонок</button>
+      <div class="container">
+        <div class="about-us__wrapper">
+          <div class="about-us__left-side">
+            <h1 class="about-us__title">о нашей компании и производстве</h1>
+            <div class="about-us__desc">
+              <p class="about-us__text">Приветствуем Вас на сайте компании «Vikna»!</p>
+              <p class="about-us__text">Мы занимаемся продажей и установкой пластиковых окон, изготовлением оконных конструкций на заказ.</p>
+              <p class="about-us__text">Заказывая у нас, Вы получаете весь спектр услуг, начиная с замера и монтажа и заканчивая диагностикой, ремонтом и обслуживанием Ваших конструкций.</p>
+            </div>
+            <button class="about-us__btn btn btn--white">заказать обратный звонок</button>
+          </div>
+          <div class="about-us__right-side">
+            <ul class="about-us__features-list">
+              <li class="about-us__features-item">
+                <img src="../img/icon-cube.svg" alt="cube" class="about-us__features-img">
+                <h2 class="about-us__features-title">Безупречное качество</h2>
+                <p class="about-us__features-text">Предоставляем гарантию 50 лет на профиль, 10 лет на стеклопакет и 5 лет на монтаж.</p>
+              </li>
+              <li class="about-us__features-item">
+                <img src="../img/icon-time.svg" alt="time" class="about-us__features-img">
+                <h2 class="about-us__features-title">Кратчайшие сроки</h2>
+                <p class="about-us__features-text">Изготовим и доставим ваши окна через 7 дней после оформления заказа.</p>
+              </li>
+              <li class="about-us__features-item">
+                <img src="../img/icon-rules.svg" alt="rules" class="about-us__features-img">
+                <h2 class="about-us__features-title">Бесплатное обслуживание</h2>
+                <p class="about-us__features-text">Изготовим и доставим ваши окна через 7 дней после оформления заказа.</p>
+              </li>
+              <li class="about-us__features-item">
+                <img src="../img/icon-home.svg" alt="home" class="about-us__features-img">
+                <h2 class="about-us__features-title">Договор на дому</h2>
+                <p class="about-us__features-text">Вам не нужно никуда ехать! Мы приедем к Вам сами со всеми необходимыми документами.</p>
+              </li>
+            </ul>
+            <button class="about-us__btn btn btn--white">заказать обратный звонок</button>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="how-it-work">
-      <h1 class="how-it-work__title">Как происходит процесс покупки?</h1>
-      <div class="how-it-work__slider">
-        <input type="radio" name="radio-group" checked>
-        <label for="" class="how-it-work__slider-label">1й этап</label>
-        <input type="radio" name="radio-group">
-        <label for="" class="how-it-work__slider-label">2й этап</label>
-        <input type="radio" name="radio-group">
-        <label for="" class="how-it-work__slider-label">3й этап</label>
-        <ul class="how-it-work__slider-list">
-          <li class="how-it-work__slider-item">
-            <p class="how-it-work__slider-text">Вы оставляете заявку на сайте или звоните нам по телефону (050) 317-69-44.</p>
-          </li>
-          <li class="how-it-work__slider-item">
-            <p class="how-it-work__slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda veniam quod, quasi dignissimos eveniet eaque sequi tenetur cumque molestiae hic rem quas asperiores at, nulla iusto, ducimus libero,
-              earum ad.</p>
-          </li>
-          <li class="how-it-work__slider-item">
-            <p class="how-it-work__slider-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium nemo cupiditate facere asperiores reprehenderit corrupti optio, veritatis ea nobis, iure, molestiae in inventore. Expedita maiores
-              animi alias nemo odit impedit.</p>
-          </li>
-        </ul>
-        <div class="how-it-work__slider-controls">
-          <span class="how-it-work__left-btn">Влево</span>
-          <span class="how-it-work__right-btn">Вправо</span>
+      <div class="container">
+        <div class="how-it-work__wrapper">
+          <h1 class="how-it-work__title">Как происходит процесс покупки?</h1>
+          <div class="how-it-work__slider">
+            <div class="how-it-work__slider-controls">
+              <span class="how-it-work__slider-label how-it-work__slider-label--curent">1й этап</span>
+              <span class="how-it-work__slider-label">2й этап</span>
+              <span class="how-it-work__slider-label">3й этап</span>
+            </div>
+            <ul class="how-it-work__slider-list">
+              <li class="how-it-work__slider-item">
+                <p class="how-it-work__slider-text">Вы оставляете <b>заявку</b> на сайте или звоните нам по телефону <b>(050) 317-69-44</b>.</p>
+              </li>
+              <li class="how-it-work__slider-item">
+                <p class="how-it-work__slider-text">Мы заезжаем на <b>замер</b> и рассчитываем стоимость заказа.</p>
+              </li>
+              <li class="how-it-work__slider-item">
+                <p class="how-it-work__slider-text">Заключаем <b>договор</b>, доставляем и устанавливаем окна.</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
     <section class="example">
-      <h1 class="example__title">Примеры наших работ</h1>
-      <p class="example__text">Заказывая у нас, Вы получаете весь спектр услуг, начиная с замера и монтажа и заканчивая диагностикой, ремонтом и обслуживанием Ваших конструкций.</p>
-      <div class="example__slider">
-
+      <div class="container">
+        <div class="example__wrapper">
+          <div class="example__right-side">
+            <h1 class="example__title">Примеры наших работ</h1>
+            <p class="example__text">Заказывая у нас, Вы получаете весь спектр услуг, начиная с замера и монтажа и заканчивая диагностикой, ремонтом и обслуживанием Ваших конструкций.</p>
+            <button class="example__btn btn">Вызвать замерщика</button>
+          </div>
+          <div class="example__left-side">
+            <div class="example__slider">
+              <ul class="example__list">
+                <li class="example__item">
+                  <img src="img/example-item.jpg" alt="" class="example__img">
+                </li>
+              </ul>
+            </div>
+            <button class="example__btn btn">Вызвать замерщика</button>
+          </div>
+        </div>
       </div>
-      <button class="example__btn btn">Вызвать замерщика</button>
     </section>
     <section class="plan">
-      <h1 class="plan__title">Рассрочка на окна 0%</h1>
-      <p class="plan__text">Заберите свое окно сейчас! А оплатите позже.</p>
-      <ul class="plan__list">
-        <li class="plan__item">
-          <p class="plan__item-text">6 месяцев</p>
-        </li>
-        <li class="plan__item">
-          <p class="plan__item-text">0% предоплаты</p>
-        </li>
-        <li class="plan__item">
-          <p class="plan__item-text">без первого взноса</p>
-        </li>
-      </ul>
-      <a href="" class="plan__btn btn btn--yellow">получить консультацию</a>
+      <div class="plan__overlay"></div>
+      <div class="container">
+        <div class="plan__wrapper">
+          <h1 class="plan__title">Рассрочка на окна 0%</h1>
+          <p class="plan__text">Заберите свое окно сейчас! А оплатите позже.</p>
+          <ul class="plan__list">
+            <li class="plan__item">
+              <p class="plan__item-text">6 месяцев</p>
+            </li>
+            <li class="plan__item">
+              <p class="plan__item-text">0% предоплаты</p>
+            </li>
+            <li class="plan__item">
+              <p class="plan__item-text">без первого взноса</p>
+            </li>
+          </ul>
+          <a href="" class="plan__btn btn btn--yellow">получить консультацию</a>
+        </div>
+      </div>
     </section>
     <section class="contact">
-      <h1 class="contact__title">Контакты</h1>
-      <div class="contact__address-wrapper">
-        <p class="contact__text">Адрес магазина</p>
-        <span class="contact__address">г. Киев ул. Антоновича, 131</span>
-        <p class="contact__text">Режим работы: пн - сб с 9:00 до 18:00</p>
+      <div class="container">
+        <div class="contact__wrapper">
+          <h1 class="contact__title">Контакты</h1>
+          <div class="contact__address-wrapper">
+            <p class="contact__text">Адрес магазина</p>
+            <p class="contact__address">г. Киев ул. Антоновича, 131</p>
+            <p class="contact__time">Режим работы: пн - сб с 9:00 до 18:00</p>
+          </div>
+          <div class="contact__mobile-wrapper">
+            <p class="contact__text">Телефон</p>
+            <a href="tel:+380633734567" class="contact__mobile">+38 (063) 373 45 67</a>
+            <a href="tel:+380503734567" class="contact__mobile">+38 (050) 373 45 67</a>
+          </div>
+          <div class="contact__recall-wrapper">
+            <p class="contact__recall">Перезвоним в течении 15 минут.</p>
+            <button class="contact__btn btn btn--white" type="button" name="button">заказать обратный звонок</button>
+          </div>
+        </div>
       </div>
-      <div class="contact__mobile-wrapper">
-        <p class="contact__text">Телефон</p>
-        <a href="" class="contact__mobile">+38 (063) 373 45 67</a>
-        <a href="" class="contact__mobile">+38 (050) 373 45 67</a>
-      </div>
-      <p class="contact__text">Перезвоним в течении 15 минут.</p>
-      <button class="contact__btn btn btn--white" type="button" name="button">заказать обратный звонок</button>
     </section>
-    <section class="map"></section>
+    <section class="map">
+    </section>
   </main>
   <footer class="footer">
-    <div class="footer__logo">
-      <img src="../img/vikna-logo.svg" alt="Vikna logo" class="footer__logo-img" width="88" height="20">
-    </div>
-    <div class="footer__social">
-      <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <svg class="footer__social-icon" width="21" height="20">
-            <use xlink:href="#s-icon-fb"></use>
-          </svg>
-        </li>
-        <li class="footer__social-item">
-          <svg class="footer__social-icon" width="23" height="15">
-            <use xlink:href="#s-icon-gplus"></use>
-          </svg>
-        </li>
-        <li class="footer__social-item">
-          <svg class="footer__social-icon" width="21" height="18">
-            <use xlink:href="#s-icon-tw"></use>
-          </svg>
-        </li>
-      </ul>
-    </div>
-    <div class="footer__nav">
-      <ul class="footer__nav-list">
-        <li class="footer__nav-item"><a href="" class="footer__nav-link">Продукция и Цены</a></li>
-        <li class="footer__nav-item"><a href="" class="footer__nav-link">преимущества</a></li>
-        <li class="footer__nav-item"><a href="" class="footer__nav-link">Как заказать</a></li>
-        <li class="footer__nav-item"><a href="" class="footer__nav-link">Наши работы</a></li>
-        <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
-      </ul>
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="../img/vikna-logo.svg" alt="Vikna logo" class="footer__logo-img" width="88" height="20">
+        </div>
+        <div class="footer__social">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="" class="footer__social-link footer__social-link--fb">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="" class="footer__social-link footer__social-link--gplus">
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="" class="footer__social-link footer__social-link--tw">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item"><a href="" class="footer__nav-link">Продукция и Цены</a></li>
+            <li class="footer__nav-item"><a href="" class="footer__nav-link">преимущества</a></li>
+            <li class="footer__nav-item"><a href="" class="footer__nav-link">Как заказать</a></li>
+            <li class="footer__nav-item"><a href="" class="footer__nav-link">Наши работы</a></li>
+            <li class="footer__nav-item"><a href="" class="footer__nav-link">Контакты</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="footer__copyright">
       <p class="footer__copyright-text">© 2018 Vikna. Все права защищены.</p>
     </div>
   </footer>
   <section class="modal-form">
+    <button class="close-btn" type="button" name="close">Закрыть</button>
     <h1 class="modal-form__title">Вызвать замерщика</h1>
     <p class="modal-form__text">Мы перезвоним вам и согласуем удобное время бесплатного замера.</p>
     <form action="post">
-      <input type="text" placeholder="Ваше имя">
-      <input type="tel" placeholder="373 18 66">
-      <button class="btn" type="submit" name="button">Отправить заявку на замер</button>
+      <div class="modal-form__inputs">
+        <input id="First-name" type="text" placeholder="Ваше имя">
+        <input id="mobile" type="tel" placeholder="+38 063 373 18 66">
+      </div>
+      <button class="modal-form__btn btn" type="submit" name="button">Отправить заявку на замер</button>
     </form>
   </section>
   <section class="modal-form-done">
-    <svg class="modal-form-done__icon" width="64" height="64">
-      <use xlink:href="#s-icon-done"></use>
-    </svg>
+    <button class="close-btn" type="button" name="close">Закрыть</button>
     <h1 class="modal-form-done__title">Заявка отправлена!</h1>
-    <p class="modal-form-done">Мы свяжемся с вами в ближайшее время.</p>
+    <p class="modal-form-done__text">Мы свяжемся с вами в ближайшее время.</p>
   </section>
   <section class="modal-recall">
+    <button class="close-btn" type="button" name="close">Закрыть</button>
     <h1 class="modal-recall__title">Заказать обратный звонок</h1>
     <p class="modal-recall__text">Мы свяжемся с вами и проконсультируем по любому вопросу.</p>
     <form action="post">
-      <input type="text" placeholder="Ваше имя">
-      <input type="tel" placeholder="373 18 66">
-      <button class="btn btn--yellow"type="submit" name="button">заказать обратный звонок</button>
+      <div class="modal-recall__inputs">
+        <input type="text" placeholder="Ваше имя">
+        <input type="tel" placeholder="+38 063 373 18 66">
+      </div>
+      <button class="modal-recall__btn btn btn--yellow" type="submit" name="button">заказать обратный звонок</button>
     </form>
   </section>
   <div class="modal-overlay"></div>

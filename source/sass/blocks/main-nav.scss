@@ -1,0 +1,223 @@
+.main-nav {
+  min-height: 70px;
+  padding: 21px 0 17px;
+  position: relative;
+
+  &__menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 32px;
+  }
+
+  &__telephone {
+    display: none;
+  }
+
+  &__service {
+    width: 195px;
+    display: flex;
+    align-items: center;
+    font-family: $ubuntu;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 12px;
+    margin-right: 40px;
+  }
+
+  &__service-calculate {
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 3px;
+      width: 21px;
+      height: 32px;
+      background: url("../img/s-icon-pencil.svg");
+    }
+  }
+
+  &__service-calculate:hover {
+    color: $green;
+
+    &::before {
+      background: url("../img/s-icon-pencil-green.svg");
+    }
+  }
+
+  &__service-call {
+    position: relative;
+    padding-left: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 3px;
+      width: 21px;
+      height: 32px;
+      background: url("../img/s-icon-pencil.svg");
+    }
+  }
+
+  &__service-call:hover {
+    color: $green;
+
+    &::before {
+      background: url("../img/s-icon-pencil-green.svg");
+    }
+  }
+  @media (max-width: 1023px) {
+    &--closed .main-nav__toggle {
+      width: 19px;
+      height: 14px;
+      background: url("../img/icon-burger.svg") no-repeat;
+    }
+
+    &--closed .main-nav__footer,
+    &--closed .main-nav__list {
+      display: none;
+    }
+
+    &--opened .main-nav__service {
+      display: none;
+    }
+
+    &--opened .main-nav__menu {
+      transform: translateY(0);
+      top: 69px;
+    }
+
+    &__menu {
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      right: 0;
+      padding: 50px 0 103px;
+      transform: translateY(-155%);
+      transition: all 0.3s;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+
+    &__toggle {
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 25px;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      font-size: 0;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: transparent;
+      background: url("../img/icon-cros.svg") no-repeat;
+      z-index: 1;
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+      padding-top: 27px;
+      padding-bottom: 27px;
+      border-top: 1px solid rgba(49, 75, 87, 0.15);
+    }
+
+    &__footer .main-nav__mobile {
+      font-size: 13px;
+      line-height: 20px;
+      margin-bottom: 0;
+    }
+
+    &__footer-wrapper {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      padding-left: 30px;
+    }
+
+    &__footer .main-nav__btn {
+      width: 140px;
+      padding: 10px 0;
+    }
+  }
+
+  &__list {
+    padding-bottom: 100px;
+  }
+
+  &__item {
+    padding-left: 40px;
+  }
+
+  &__link {
+    opacity: 0.9;
+    color: #212121;
+    font-family: $ubuntu;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: $desktop) {
+  .main-nav {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+
+    &__menu-wrapper {
+      flex-grow: 1;
+    }
+
+    &__logo-img {
+      width: 117px;
+      height: 26px;
+    }
+
+    &__menu-wrapper .main-nav__telephone {
+      display: block;
+    }
+
+    &__telephone .main-nav__mobile {
+      width: 135px;
+      font-size: 13px;
+      line-height: 15px;
+      margin: 0;
+    }
+
+    &__toggle {
+      display: none;
+    }
+
+    &__list {
+      width: 532px;
+      display: flex;
+      justify-content: flex-end;
+      padding: 0;
+    }
+
+    &__item {
+      font-size: 11px;
+      font-weight: 500;
+      padding: 0;
+      margin-right: 21px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &__footer {
+      display: none;
+    }
+  }
+}

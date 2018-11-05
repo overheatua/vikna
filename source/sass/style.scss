@@ -3,8 +3,8 @@
 @import "mixins.scss";
 @import "scaffolding.scss";
 @import "btn.scss";
-@import "blocks/header.scss";
 
+@import "blocks/header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/promo.scss";
 @import "blocks/recall.scss";
@@ -20,10 +20,4 @@
 @import "blocks/modal-form.scss";
 @import "blocks/modal-form-done.scss";
 @import "blocks/modal-recall.scss";
-@import "blocks/modal-overlay.scss";
-//
-// @import "blocks/product.scss";
-// @import "blocks/show-more.scss";
-// @import "blocks/extra-product.scss";
-//
-// @import "blocks/form.scss";
+@import "blocks/modal-overlay.scss"

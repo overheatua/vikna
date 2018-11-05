@@ -20,15 +20,12 @@
     background-color: #40d14c;
   }
 
-  &:active {
-    // color: rgba(255, 255, 255, 0.3);
-  }
-
   &--yellow {
     color: $grey;
     background-color: $yellow;
     padding: 19px 33px;
-box-shadow: none;
+    box-shadow: none;
+
     &:active,
     &:hover {
       background-color: #ffe139;
@@ -49,4 +46,18 @@ box-shadow: none;
       background-color: $green;
     }
   }
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 12px;
+  width: 18px;
+  height: 18px;
+  background: url("../img/icon-cros.svg") no-repeat;
+  border: 0;
+  background-color: transparent;
+  font-size: 0;
+  outline: none;
+  cursor: pointer;
 }

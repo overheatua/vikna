@@ -1,0 +1,118 @@
+.plan {
+  background: url("../img/plan-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: -674px 0;
+  position: relative;
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__wrapper {
+    padding: 50px 0;
+    min-height: 413px;
+  }
+
+  &__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 0;
+  }
+
+  &__title {
+    margin: 0 0 27px;
+    color: #212121;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0 0 30px;
+    font-family: $ubuntu;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__list {
+    margin-bottom: 39px;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 57px;
+      width: 14px;
+      height: 11px;
+      background: url("../img/icon-check.svg");
+    }
+  }
+
+  &__item-text {
+    margin: 0 0 14px;
+    padding-left: 81px;
+  }
+
+  &__btn {
+    display: block;
+    margin: 0 auto;
+    width: 270px;
+  }
+}
+@media (min-width: $desktop) {
+  .plan {
+    background-position: top center;
+&__overlay {
+  display: none;
+}
+    &__wrapper {
+      width: 525px;
+      margin-right: auto;
+      padding: 102px 0;
+    }
+
+    &__title {
+      text-align: left;
+    }
+
+    &__text {
+      text-align: left;
+    }
+
+    &__list {
+      display: flex;
+      margin-bottom: 50px;
+    }
+
+    &__item {
+      margin-right: 30px;
+
+      &::before {
+        top: 6px;
+        left: 0;
+      }
+    }
+
+    &__item-text {
+      margin: 0;
+      padding-left: 24px;
+    }
+
+    &__btn {
+      margin: 0 auto 0 0;
+    }
+  }
+}
