@@ -40,11 +40,11 @@
         </div>
         <div class="main-nav__menu">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Цены</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Преимущества</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Как заказать</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Наши работы</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
+            <li class="main-nav__item"><a href="#section-price" class="main-nav__link">Цены</a></li>
+            <li class="main-nav__item"><a href="#section-about" class="main-nav__link">Преимущества</a></li>
+            <li class="main-nav__item"><a href="#section-how" class="main-nav__link">Как заказать</a></li>
+            <li class="main-nav__item"><a href="#section-works" class="main-nav__link">Наши работы</a></li>
+            <li class="main-nav__item"><a href="#section-contacts" class="main-nav__link">Контакты</a></li>
           </ul>
           <div class="main-nav__footer">
             <div class="main-nav__footer-wrapper">
@@ -87,14 +87,14 @@
           </div>
           <form action="post">
             <div class="recall__form">
-              <input type="text" id="phone-number" placeholder="+38 063 373 18 66">
+              <input type="text" id="phone-number" placeholder="+38 063 373 18 66" required>
               <button class="recall__btn btn btn--yellow" type="submit">Оставить заявку</button>
             </div>
           </form>
         </div>
       </div>
     </section>
-    <section class="product">
+    <section class="product" id="section-price">
       <div class="container">
         <div class="product__wrapper">
           <h1 class="product__title">Наша продукция и цены</h1>
@@ -318,13 +318,13 @@
           </div>
           <div class="product__call">
             <img src="img/master-img.png" alt="master" class="product__call-img">
-            <p class="product__call-text">Стоимость монтажа <b>375</b> грн. Цена окна с фурнитурой Axor (так же устанавливаются Siegenia, Winkhaus и Maco). Доставка в приделах города и замер <b>бесплатные</b>.</p>
+            <p class="product__call-text">Стоимость монтажа <b>375</b> грн.<br> Цена окна с фурнитурой Axor (так же устанавливаются Siegenia, Winkhaus и Maco). Доставка в приделах города и замер <b>бесплатные</b>.</p>
             <a href="#" class="product__call-btn btn">Вызвать замерщика</a>
           </div>
         </div>
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="section-about">
       <div class="container">
         <div class="about-us__wrapper">
           <div class="about-us__left-side">
@@ -351,7 +351,7 @@
               <li class="about-us__features-item">
                 <img src="img/icon-rules.svg" alt="rules" class="about-us__features-img">
                 <h2 class="about-us__features-title">Бесплатное обслуживание</h2>
-                <p class="about-us__features-text">Изготовим и доставим ваши окна через 7 дней после оформления заказа.</p>
+                <p class="about-us__features-text">Осуществляем бесплатное техническое обслуживание пластиковых окон после установки.</p>
               </li>
               <li class="about-us__features-item">
                 <img src="img/icon-home.svg" alt="home" class="about-us__features-img">
@@ -364,7 +364,7 @@
         </div>
       </div>
     </section>
-    <section class="how-it-work">
+    <section class="how-it-work" id="section-how">
       <div class="container">
         <div class="how-it-work__wrapper">
           <h1 class="how-it-work__title">Как происходит процесс покупки?</h1>
@@ -389,7 +389,7 @@
         </div>
       </div>
     </section>
-    <section class="example">
+    <section class="example" id="section-works">
       <div class="container">
         <div class="example__wrapper">
           <div class="example__right-side">
@@ -437,7 +437,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="section-contacts">
       <div class="container">
         <div class="contact__wrapper">
           <h1 class="contact__title">Контакты</h1>
@@ -465,7 +465,9 @@
     <div class="container">
       <div class="footer__wrapper">
         <div class="footer__logo">
-          <img src="img/vikna-logo.svg" alt="Vikna logo" class="footer__logo-img" width="88" height="20">
+          <a href="/">
+            <img src="img/vikna-logo.svg" alt="Vikna logo" class="footer__logo-img" width="88" height="20">
+          </a>
         </div>
         <div class="footer__social">
           <ul class="footer__social-list">
@@ -485,11 +487,11 @@
         </div>
         <div class="footer__nav">
           <ul class="footer__nav-list">
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Продукция и Цены</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link">преимущества</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Как заказать</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Наши работы</a></li>
-            <li class="footer__nav-item"><a href="#" class="footer__nav-link">Контакты</a></li>
+            <li class="footer__nav-item"><a href="#section-price" class="footer__nav-link">Продукция и Цены</a></li>
+            <li class="footer__nav-item"><a href="#section-about" class="footer__nav-link">преимущества</a></li>
+            <li class="footer__nav-item"><a href="#section-how" class="footer__nav-link">Как заказать</a></li>
+            <li class="footer__nav-item"><a href="#section-works" class="footer__nav-link">Наши работы</a></li>
+            <li class="footer__nav-item"><a href="#section-contacts" class="footer__nav-link">Контакты</a></li>
           </ul>
         </div>
       </div>
@@ -504,8 +506,8 @@
     <p class="modal-form__text">Мы перезвоним вам и согласуем удобное время бесплатного замера.</p>
     <form action="post">
       <div class="modal-form__inputs">
-        <input id="First-name" type="text" placeholder="Ваше имя">
-        <input id="mobile" type="tel" placeholder="+38 063 373 18 66">
+        <input id="First-name" type="text" placeholder="Ваше имя" required>
+        <input id="mobile" type="tel" placeholder="+38 063 373 18 66" required>
       </div>
       <button class="modal-form__btn btn" type="submit" name="button">Отправить заявку на замер</button>
     </form>
@@ -521,8 +523,8 @@
     <p class="modal-recall__text">Мы свяжемся с вами и проконсультируем по любому вопросу.</p>
     <form action="post">
       <div class="modal-recall__inputs">
-        <input type="text" placeholder="Ваше имя">
-        <input type="tel" placeholder="+38 063 373 18 66">
+        <input type="text" placeholder="Ваше имя" required>
+        <input id="mobile1" type="tel" placeholder="+38 063 373 18 66" required>
       </div>
       <button class="modal-recall__btn btn btn--yellow" type="submit" name="button">заказать обратный звонок</button>
     </form>
@@ -530,7 +532,7 @@
   <div class="modal-overlay"></div>
   <script src="js/plugins/jquery-3.2.0.min.js"></script>
   <script src="js/plugins/slick.min.js"></script>
+  <script src="js/plugins/jquery.mask.min.js"></script>
   <script type="text/javascript" src="js/script.min.js"></script>
 </body>
-
 </html>

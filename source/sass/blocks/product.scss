@@ -111,9 +111,9 @@
       width: 100%;
       margin-left: 0;
     }
-    @media (min-width: $desktop) {
-      width: calc(100% + 30px);
-      margin-left: -15px;
+    @media (min-width: 1200px) {
+      width: calc(100% + 26px);
+      margin-left: -13px;
     }
   }
 

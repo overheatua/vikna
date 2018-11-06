@@ -6,6 +6,12 @@ html {
 
 html {
   box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 *,
@@ -66,7 +72,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 input[type="text"],
 input[type="tel"],
-input[type="number"] {
+input[type="number"],
+input[type="email"] {
   padding: 16px 20px;
   color: #212121;
   font-family: "Open Sans";
@@ -76,6 +83,7 @@ input[type="number"] {
   border-radius: 4px;
   border: 1px solid #dadada;
   outline: none;
+  appearance: none;
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -83,11 +91,6 @@ input[type="number"] {
 
   &:focus {
     border: 1px solid #444444;
-  }
-
-  &:invalid {
-    border: 2px solid #ff8282;
-    padding: 9px 14px;
   }
 }
 

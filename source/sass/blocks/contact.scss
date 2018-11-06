@@ -25,6 +25,7 @@
     font-weight: 700;
     text-transform: uppercase;
     margin: 0 0 13px;
+    color: #212121;
   }
 
   &__time {
@@ -49,7 +50,7 @@
     &::before {
       content: "";
       position: absolute;
-      top: 11px;
+      top: 8px;
       left: 0;
       width: 10px;
       height: 10px;

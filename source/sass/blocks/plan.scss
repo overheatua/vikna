@@ -36,6 +36,7 @@
   &__text {
     margin: 0 0 29px;
     font-family: $ubuntu;
+    color: #212121;
     font-size: 16px;
     font-weight: 700;
     line-height: 22px;
@@ -64,6 +65,9 @@
   &__item-text {
     margin: 0 0 13px;
     padding-left: 66px;
+    color: #4b4b4b;
+    font-family: $opensans;
+    font-size: 16px;
   }
 
   &__btn {

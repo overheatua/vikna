@@ -99,23 +99,59 @@ $(document).ready(function() {
     }
   });
 
-  $('.how-it-work__slider-controls').slick({
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    asNavFor: '.how-it-work__slider-list',
-    dots: false,
-    focusOnSelect: true,
-    infinite: false
+  $(window).resize(function() {
+
+    var width = $(window).width();
+    if (width < 768) {
+      $('.how-it-work__slider-controls').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        asNavFor: '.how-it-work__slider-list',
+        dots: false,
+        focusOnSelect: true,
+        infinite: false
+      });
+
+      $('.how-it-work__slider-list').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.how-it-work__slider-controls'
+      });
+    } else {
+      $('.how-it-work__slider-list').slick('unslick');
+      $('.how-it-work__slider-controls').slick('unslick');
+    }
   });
 
-  $('.how-it-work__slider-list').slick({
-   slidesToShow: 1,
-   slidesToScroll: 1,
-   arrows: true,
-   fade: true,
-   asNavFor: '.how-it-work__slider-controls'
- });
+  $("#mobile, #mobile1, #phone-number").on({
+    focus: function() {
+      if (this.value==='') this.value = '+38 ';
+    },
+    blur: function() {
+      if (this.value==='+38 ') this.value = '';
+    }
+  });
 
+  $('#mobile, #mobile1, #phone-number').mask('+38 000 000 00 00');
+
+  $(document).on('click', 'a[href^="#"]', function (e) {
+    e.preventDefault();
+
+    if ($(document).width() < 1024) {
+      $('.main-nav').addClass('main-nav--closed');
+      $('.main-nav').removeClass('main-nav--opened');
+
+      $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top - 70
+      }, 500);
+    } else {
+      $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+    }
+  });
 
   $('.example__list').slick();
 
