@@ -10,13 +10,16 @@
     margin: 0;
     text-align: center;
     font-size: 24px;
-    font-weight: 700;
     line-height: 26px;
-    margin-bottom: 38px;
+    margin-bottom: 32px;
   }
 
   &__slider {
     padding: 0 37px;
+  }
+
+  &__slider-controls {
+    margin-bottom: 20px;
   }
 
   &__slider-label {
@@ -45,14 +48,12 @@
   }
 
   &__slider-text {
+    margin: 0;
     color: #4b4b4b;
     font-size: 14px;
     line-height: 18px;
   }
 }
-
-
-
 @media (min-width: $desktop) {
   .how-it-work {
     &__wrapper {
@@ -79,17 +80,18 @@
     &__slider-controls {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 0;
     }
 
     &__slider-label {
       line-height: 14px;
       width: 220px;
-      margin: 0;
-      margin-bottom: 24px;
+      margin: 0 0 24px;
 
       &:last-child {
         max-width: 220px;
       }
+
       &::before {
         background: url("../img/s-icon-arrow-green.svg");
       }
@@ -107,6 +109,7 @@
         margin-right: 0;
       }
     }
+
     &__slider-text {
       margin: 0;
     }

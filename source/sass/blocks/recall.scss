@@ -50,14 +50,16 @@
     }
 
     &__title {
-      line-height: 40px;
+      line-height: 35px;
       margin: 0;
     }
 
     &__text {
       margin: 0;
     }
-
+#phone-number {
+  width: 270px;
+}
     &__btn {
       width: 200px;
       color: #4b4b4b;

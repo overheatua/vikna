@@ -100,7 +100,7 @@
       transform: translateY(-155%);
       transition: all 0.3s;
       background-color: #ffffff;
-      z-index: 1;
+      z-index: 2;
     }
 
     &__toggle {
@@ -108,7 +108,7 @@
       position: absolute;
       width: 20px;
       height: 20px;
-      top: 25px;
+      top: 28px;
       right: 0;
       margin: 0;
       padding: 0;
@@ -192,6 +192,15 @@
       font-size: 13px;
       line-height: 15px;
       margin: 0;
+
+      &::before {
+        top: 4px;
+      }
+    }
+
+    &__service {
+      width: 241px;
+      margin-right: 57px;
     }
 
     &__toggle {
@@ -199,9 +208,9 @@
     }
 
     &__list {
-      width: 532px;
+      width: 471px;
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       padding: 0;
     }
 
@@ -214,6 +223,10 @@
       &:last-child {
         margin-right: 0;
       }
+    }
+
+    &__link {
+      font-size: 11px;
     }
 
     &__footer {

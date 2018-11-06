@@ -26,24 +26,22 @@
 
   &__title {
     font-size: 24px;
-    font-weight: 700;
     line-height: 26px;
-    margin: 0 0 40px;
+    margin: 0 0 37px;
     text-align: center;
   }
 
   &__text {
     color: #4b4b4b;
     font-size: 16px;
-    margin: 0 0 40px;
+    margin: 0 0 43px;
   }
 
   &__slider {
     max-width: 552px;
     margin: 0 auto;
     width: 100%;
-    margin-bottom: 50px;
-
+    margin-bottom: 40px;
     @media (min-width: $desktop) {
       max-width: 680px;
     }
@@ -54,13 +52,12 @@
       background-color: transparent;
       width: 12px;
       height: 30px;
-      background-image: url(../img/icon-left_arrow.svg);
+      background-image: url("../img/icon-left_arrow.svg");
       outline: none;
       position: absolute;
       top: calc(50% - 15px);
       cursor: pointer;
-      z-index: 4;
-
+      z-index: 1;
       @media (min-width: $desktop) {
         width: 24px;
         height: 59px;
@@ -85,11 +82,9 @@
 
   &__item {
     margin: 0 32px 10px 42px;
-    margin-top: 0;
     width: 100%;
     height: 235px;
     position: relative;
-
     @media (min-width: $desktop) {
       margin: 0 54px 20px 74px;
     }
@@ -111,7 +106,6 @@
       left: -10px;
       background-color: #e4e4e4;
       z-index: -1;
-
       @media (min-width: $desktop) {
         left: -20px;
         bottom: -20px;
@@ -133,13 +127,18 @@
       padding: 100px 0 0;
       flex-direction: row-reverse;
       justify-content: space-between;
-      margin-bottom: 120px;
+      margin-bottom: 100px;
+      align-items: flex-start;
+    }
+
+    &__left-side {
+      max-width: 680px;
     }
 
     &__right-side {
-      justify-content: center;
-      align-items: flex-start;
       max-width: 440px;
+      align-items: flex-start;
+      padding-top: 44px;
 
       .example__btn {
         display: block;
@@ -148,12 +147,16 @@
     }
 
     &__title {
+      font-size: 30px;
+      line-height: 52px;
       text-align: left;
+      letter-spacing: 1px;
+      margin-bottom: 50px;
     }
 
     &__text {
       width: 440px;
-      margin-bottom: 50px;
+      margin-bottom: 62px;
     }
 
     &__slider {

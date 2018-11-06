@@ -6,10 +6,9 @@
   &__title {
     margin: 0;
     font-size: 24px;
-    font-weight: 700;
     line-height: 26px;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
   }
 
   &__address-wrapper {
@@ -18,44 +17,39 @@
 
   &__text {
     font-size: 14px;
-    margin: 0 0 14px;
+    margin: 0 0 9px;
   }
 
   &__address {
-    color: #212121;
     font-family: $ubuntu;
-    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 0 0 10px;
+    margin: 0 0 13px;
   }
 
   &__time {
-    font-size: 16px;
     margin: 0 0 14px;
   }
 
   &__mobile-wrapper {
-    margin-bottom: 43px;
+    margin-bottom: 41px;
   }
 
   &__mobile {
     width: 175px;
     display: block;
     position: relative;
-    color: #212121;
     font-family: $ubuntu;
-    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     padding-left: 17px;
-    margin: 0 0 14px;
+    margin: 0 0 9px;
     cursor: pointer;
 
     &::before {
       content: "";
       position: absolute;
-      top: 3px;
+      top: 11px;
       left: 0;
       width: 10px;
       height: 10px;
@@ -65,7 +59,7 @@
 
   &__recall {
     font-size: 14px;
-    margin: 0 0 20px;
+    margin: 0 0 18px;
   }
 
   &__btn {
@@ -80,26 +74,32 @@
       min-height: 243px;
       display: flex;
       align-items: center;
+      justify-content: space-between;
     }
 
     &__title {
-      margin: 0 109px 0 0;
+      font-size: 30px;
+      line-height: 52px;
+      letter-spacing: 1px;
+      margin: 0;
     }
 
     &__address-wrapper {
-      margin: 0 90px 0 0;
+      margin: 0;
     }
 
     &__mobile-wrapper {
-      margin: 0 112px 0 0;
+      margin: 0;
     }
 
     &__recall-wrapper {
       padding: 10px 0;
     }
+
     &__mobile:last-child {
       margin-bottom: 0;
     }
+
     &__time {
       margin-bottom: 0;
     }

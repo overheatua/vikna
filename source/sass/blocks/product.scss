@@ -7,7 +7,7 @@
   }
 
   &__title {
-    margin: 0 0 35px;
+    margin: 0 0 41px;
     font-size: 24px;
     line-height: 26px;
   }
@@ -19,7 +19,7 @@
   &__brand-list {
     display: flex;
     align-items: center;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
 
   &__brand-item {
@@ -31,9 +31,17 @@
     margin-right: 40px;
   }
 
-  &__brand-link--curent,
+  &__type-link {
+    font-weight: 400;
+  }
+
+  &__brand-link--curent {
+    color: #39bb44;
+  }
+
   &__type-link--curent {
     color: #39bb44;
+    font-weight: 700;
   }
 
   &__type-list {
@@ -45,7 +53,11 @@
     font-family: "Open Sans";
     font-size: 14px;
     font-weight: 700;
-    margin-right: 20px;
+    margin-right: 33px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__slider {
@@ -68,17 +80,16 @@
       background-color: transparent;
       width: 12px;
       height: 30px;
-      background-image: url(../img/icon-left_arrow.svg);
+      background-image: url("../img/icon-left_arrow.svg");
       outline: none;
       position: absolute;
-      top: calc(50% - 15px);
+      top: calc(50% - 36px);
       cursor: pointer;
-      z-index: 4;
+      z-index: 1;
     }
 
     .slick-prev {
       left: 15px;
-
       @media (min-width: 768px) {
         left: -7px;
       }
@@ -87,7 +98,6 @@
     .slick-next {
       transform: rotate(180deg);
       right: 15px;
-
       @media (min-width: 768px) {
         right: -7px;
       }
@@ -97,12 +107,10 @@
   &__list {
     width: calc(100% + 30px);
     margin-left: -15px;
-
     @media (min-width: 768px) {
       width: 100%;
       margin-left: 0;
     }
-
     @media (min-width: $desktop) {
       width: calc(100% + 30px);
       margin-left: -15px;
@@ -121,24 +129,21 @@
     box-shadow: 0 4px 20px rgba(195, 195, 195, 0.33);
     background-color: #ffffff;
     outline: none;
-
     @media (min-width: 375px) {
       margin: 15px 45px;
     }
-
     @media (min-width: 768px) {
       margin: 15px 13px;
     }
   }
 
   &__item-text {
-    margin: 0;
-    margin-bottom: 8px;
+    margin: 0 0 4px;
     font-size: 14px;
   }
 
   &__item-img {
-    margin-bottom: 26px;
+    margin-bottom: 23px;
   }
 
   &__item-title {
@@ -148,17 +153,21 @@
     font-weight: 500;
     line-height: 24px;
     text-transform: none;
-    margin-bottom: 17px;
+    margin-bottom: 13px;
   }
 
   &__item-desc {
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 19px;
   }
 
   &__item-price {
     color: #39bb44;
     font-weight: 700;
+  }
+
+  &__item-btn {
+    padding: 12px 10px;
   }
 
   &__call {
@@ -175,12 +184,12 @@
   }
 
   &__call-text {
-    width: 58%;
+    width: 60%;
     margin: 0;
     color: #4b4b4b;
     font-size: 14px;
     line-height: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 29px;
   }
 
   &__call-btn {
@@ -191,11 +200,10 @@
 .product__slider1 {
   display: block;
 }
-
 @media (min-width: $desktop) {
   .product {
     &__wrapper {
-      padding: 80px 0 60px 0;
+      padding: 78px 0 60px;
     }
 
     &__title {
@@ -204,27 +212,31 @@
       line-height: 52px;
       letter-spacing: 1px;
       text-align: center;
-      margin-bottom: 45px;
+      margin-bottom: 65px;
     }
 
     &__nav {
-      margin-bottom: 35px;
+      margin-bottom: 20px;
     }
 
     &__brand-list {
-      margin-bottom: 18px;
+      margin-bottom: 17px;
     }
 
     &__brand-item {
-      margin-right: 38px;
+      margin-right: 85px;
     }
 
     &__type-item {
-      margin-right: 24px;
+      margin-right: 28px;
+    }
+
+    &__type-link {
+      font-size: 16px;
     }
 
     &__slider {
-      margin-bottom: 60px;
+      margin-bottom: 43px;
     }
 
     &__call-img {
@@ -232,7 +244,7 @@
     }
 
     &__call-text {
-      width: 566px;
+      width: 540px;
       margin-bottom: 0;
     }
   }

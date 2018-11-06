@@ -10,7 +10,7 @@
   }
 
   &__wrapper {
-    padding: 50px 0;
+    padding-top: 50px;
     min-height: 413px;
   }
 
@@ -34,7 +34,7 @@
   }
 
   &__text {
-    margin: 0 0 30px;
+    margin: 0 0 29px;
     font-family: $ubuntu;
     font-size: 16px;
     font-weight: 700;
@@ -44,7 +44,7 @@
   }
 
   &__list {
-    margin-bottom: 39px;
+    margin-bottom: 36px;
   }
 
   &__item {
@@ -54,7 +54,7 @@
       content: "";
       position: absolute;
       top: 5px;
-      left: 57px;
+      left: 42px;
       width: 14px;
       height: 11px;
       background: url("../img/icon-check.svg");
@@ -62,8 +62,8 @@
   }
 
   &__item-text {
-    margin: 0 0 14px;
-    padding-left: 81px;
+    margin: 0 0 13px;
+    padding-left: 66px;
   }
 
   &__btn {
@@ -74,41 +74,49 @@
 }
 @media (min-width: $desktop) {
   .plan {
+    min-height: 450px;
     background-position: top center;
-&__overlay {
-  display: none;
-}
+
+    &__overlay {
+      display: none;
+    }
+
     &__wrapper {
-      width: 525px;
+      width: 550px;
       margin-right: auto;
       padding: 102px 0;
     }
 
     &__title {
+      font-size: 30px;
+      line-height: 36px;
+      letter-spacing: 1px;
       text-align: left;
+      margin-bottom: 22px;
     }
 
     &__text {
       text-align: left;
+      margin-bottom: 40px;
     }
 
     &__list {
       display: flex;
-      margin-bottom: 50px;
+      margin-bottom: 48px;
     }
 
     &__item {
-      margin-right: 30px;
+      margin-right: 32px;
 
       &::before {
         top: 6px;
-        left: 0;
+        left: 6px;
       }
     }
 
     &__item-text {
       margin: 0;
-      padding-left: 24px;
+      padding-left: 30px;
     }
 
     &__btn {
