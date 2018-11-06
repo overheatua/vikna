@@ -99,6 +99,24 @@ $(document).ready(function() {
     }
   });
 
+  $('.how-it-work__slider-controls').slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    asNavFor: '.how-it-work__slider-list',
+    dots: false,
+    focusOnSelect: true,
+    infinite: false
+  });
+
+  $('.how-it-work__slider-list').slick({
+   slidesToShow: 1,
+   slidesToScroll: 1,
+   arrows: true,
+   fade: true,
+   asNavFor: '.how-it-work__slider-controls'
+ });
+
+
   $('.example__list').slick();
 
   var options = {

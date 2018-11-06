@@ -33,10 +33,10 @@
       content: "";
       position: absolute;
       top: -3px;
-      left: 3px;
-      width: 21px;
+      left: -5px;
+      width: 24px;
       height: 32px;
-      background: url("../img/s-icon-pencil.svg");
+      background: url("../img/s-icon-calculator.svg");
     }
   }
 
@@ -44,7 +44,7 @@
     color: $green;
 
     &::before {
-      background: url("../img/s-icon-pencil-green.svg");
+      background: url("../img/s-icon-calculator-hover.svg");
     }
   }
 
@@ -56,7 +56,7 @@
       content: "";
       position: absolute;
       top: -3px;
-      left: 3px;
+      left: 0;
       width: 21px;
       height: 32px;
       background: url("../img/s-icon-pencil.svg");
