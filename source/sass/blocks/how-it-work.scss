@@ -75,11 +75,11 @@
       left: 0;
       width: 12px;
       height: 12px;
-      background: url("../img/s-icon-arrow.svg");
+      background: url("../img/icon-arrow.svg");
     }
   }
   .slick-current::before {
-    background: url("../img/s-icon-arrow-green.svg");
+    background: url("../img/icon-arrow-green.svg");
   }
 
 
@@ -114,7 +114,7 @@
 
       &::before {
         top: 2px;
-        background: url("../img/s-icon-arrow-green.svg");
+        background: url("../img/icon-arrow-green.svg");
       }
     }
 

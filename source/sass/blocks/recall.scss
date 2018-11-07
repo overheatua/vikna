@@ -29,7 +29,7 @@
   &__btn {
     width: 70px;
     font-size: 0;
-    background-image: url("../img/s-icon-plane.svg");
+    background-image: url("../img/icon-plane.svg");
     background-position: center;
     background-repeat: no-repeat;
     margin: 0;
@@ -63,12 +63,9 @@
     &__btn {
       width: 200px;
       color: #4b4b4b;
-      font-family: $ubuntu;
       font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
       background-image: none;
-      padding: 19px 32px;
+      padding: 19px 0;
       margin-left: 5px;
     }
   }
