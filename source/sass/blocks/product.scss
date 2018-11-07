@@ -190,6 +190,9 @@
     font-size: 14px;
     line-height: 18px;
     margin-bottom: 29px;
+    @media (max-width: 320px) {
+      width: 58%;
+    }
   }
 
   &__call-btn {

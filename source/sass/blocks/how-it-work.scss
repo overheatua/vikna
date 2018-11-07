@@ -65,7 +65,9 @@
     &:last-child {
       margin-right: 0;
     }
-
+    @media (max-width: 320px) {
+      padding-left: 15px;
+    }
     &::before {
       content: "";
       position: absolute;

@@ -10,6 +10,12 @@
     min-height: 32px;
   }
 
+  &__menu-logo {
+    @media (max-width: 320px) {
+      width: 65px;
+    }
+  }
+
   &__telephone {
     display: none;
   }
@@ -23,52 +29,36 @@
     font-weight: 500;
     line-height: 12px;
     margin-right: 40px;
-  }
-
-  &__service-calculate {
-    position: relative;
-    padding-left: 30px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: -3px;
-      left: -5px;
-      width: 24px;
-      height: 32px;
-      background: url("../img/s-icon-calculator.svg");
+    @media (max-width: 320px) {
+      margin-right: 25px;
     }
   }
 
-  &__service-calculate:hover {
-    color: $green;
-
-    &::before {
-      background: url("../img/s-icon-calculator-hover.svg");
-    }
-  }
-
+  &__service-calculate,
   &__service-call {
-    position: relative;
-    padding-left: 30px;
+    display: flex;
+    align-items: center;
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: -3px;
-      left: 0;
-      width: 21px;
-      height: 32px;
-      background: url("../img/s-icon-pencil.svg");
+    &:hover {
+      color: #39bb44;
+    }
+
+    &-icon {
+      min-width: 24px;
+      fill: #c0c0bf;
+    }
+
+    &:hover svg {
+      fill: #39bb44;
     }
   }
 
-  &__service-call:hover {
-    color: $green;
+  &__service-call-icon {
+      min-width: 21px;
+  }
 
-    &::before {
-      background: url("../img/s-icon-pencil-green.svg");
-    }
+  &__service-text {
+    padding-left: 6px;
   }
   @media (max-width: 1023px) {
     &--closed .main-nav__toggle {
@@ -127,6 +117,9 @@
       padding-top: 27px;
       padding-bottom: 27px;
       border-top: 1px solid rgba(49, 75, 87, 0.15);
+      @media (max-width: 320px) {
+        display: none;
+      }
     }
 
     &__footer .main-nav__mobile {

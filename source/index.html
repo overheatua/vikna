@@ -30,9 +30,15 @@
           </div>
           <div class="main-nav__service">
             <a href="#" class="main-nav__service-calculate">
+              <svg class="main-nav__service-calculate-icon" width="24" height="32">
+                <use xlink:href="#s-icon-calculator"></use>
+              </svg>
               <span class="main-nav__service-text">Рассчитать стоимость</span>
             </a>
             <a href="#" class="main-nav__service-call">
+              <svg class="main-nav__service-call-icon" width="21" height="32">
+                <use xlink:href="#s-icon-pencil"></use>
+              </svg>
               <span class="main-nav__service-text">Вызвать замерщика</span>
             </a>
           </div>
@@ -458,7 +464,7 @@
         </div>
       </div>
     </section>
-    <section class="map">
+    <section class="map" id="map">
     </section>
   </main>
   <footer class="footer">
@@ -473,14 +479,23 @@
           <ul class="footer__social-list">
             <li class="footer__social-item">
               <a href="#" class="footer__social-link footer__social-link--fb">
+                <svg class="footer__social-link-icon footer__social-link-icon--fb" width="21" height="20">
+                  <use xlink:href="#s-icon-fb"></use>
+                </svg>
               </a>
             </li>
             <li class="footer__social-item">
               <a href="#" class="footer__social-link footer__social-link--gplus">
+                <svg class="footer__social-link-icon footer__social-link-icon--gplus" width="21" height="20">
+                  <use xlink:href="#s-icon-gplus"></use>
+                </svg>
               </a>
             </li>
             <li class="footer__social-item">
               <a href="#" class="footer__social-link footer__social-link--tw">
+                <svg class="footer__social-link-icon footer__social-link-icon--tw" width="21" height="20">
+                  <use xlink:href="#s-icon-tw"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -534,5 +549,7 @@
   <script src="js/plugins/slick.min.js"></script>
   <script src="js/plugins/jquery.mask.min.js"></script>
   <script type="text/javascript" src="js/script.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwUCuGte6jc8RBNF93V9IC6enU_cEuoio&callback=initMap"
+    async defer></script>
 </body>
 </html>

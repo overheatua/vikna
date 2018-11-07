@@ -127,16 +127,16 @@ $(document).ready(function() {
 
   $("#mobile, #mobile1, #phone-number").on({
     focus: function() {
-      if (this.value==='') this.value = '+38 ';
+      if (this.value === '') this.value = '+38 ';
     },
     blur: function() {
-      if (this.value==='+38 ') this.value = '';
+      if (this.value === '+38 ') this.value = '';
     }
   });
 
   $('#mobile, #mobile1, #phone-number').mask('+38 000 000 00 00');
 
-  $(document).on('click', 'a[href^="#"]', function (e) {
+  $(document).on('click', 'a[href^="#"]', function(e) {
     e.preventDefault();
 
     if ($(document).width() < 1024) {
@@ -144,11 +144,11 @@ $(document).ready(function() {
       $('.main-nav').removeClass('main-nav--opened');
 
       $('html, body').animate({
-          scrollTop: $($.attr(this, 'href')).offset().top - 70
+        scrollTop: $($.attr(this, 'href')).offset().top - 70
       }, 500);
     } else {
       $('html, body').animate({
-          scrollTop: $($.attr(this, 'href')).offset().top
+        scrollTop: $($.attr(this, 'href')).offset().top
       }, 500);
     }
   });
@@ -161,8 +161,7 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: false,
     infinite: false,
-    responsive: [
-      {
+    responsive: [{
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
@@ -191,3 +190,14 @@ $(document).ready(function() {
   $('.js-slider-3').slick(options);
   $('.js-slider-4').slick(options);
 });
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {
+      lat: -34.397,
+      lng: 150.644
+    },
+    zoom: 8
+  });
+}
