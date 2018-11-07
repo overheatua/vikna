@@ -195,9 +195,11 @@ var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {
-      lat: -34.397,
-      lng: 150.644
+      lat: 50.412163,
+      lng: 30.516648
     },
-    zoom: 8
+    zoom: 17
   });
-}
+  var point = {lat: 50.412163, lng: 30.516648};
+  var marker = new google.maps.Marker({position: point, map: map});
+};
