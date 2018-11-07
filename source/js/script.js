@@ -190,20 +190,6 @@ $(document).ready(function() {
   $('.js-slider-3').slick(options);
   $('.js-slider-4').slick(options);
 
-<<<<<<< Updated upstream
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {
-      lat: 50.412163,
-      lng: 30.516648
-    },
-    zoom: 17
-  });
-  var point = {lat: 50.412163, lng: 30.516648};
-  var marker = new google.maps.Marker({position: point, map: map});
-};
-=======
   function initMap() {
     var mapOptions = {
       zoom: 17,
@@ -220,8 +206,7 @@ function initMap() {
     var marker = new google.maps.Marker({
       position: new google.maps.LatLng(50.412163,30.516648),
       map: map,
-      title: 'Vukna',
-      // icon: '/img/svg/map-marker.svg',
+      title: 'Vikna',
       animation: google.maps.Animation.DROP
     });
   };
@@ -230,4 +215,3 @@ function initMap() {
     $('#map').length && initMap();
   });
 });
->>>>>>> Stashed changes
