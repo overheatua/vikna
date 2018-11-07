@@ -189,8 +189,8 @@ $(document).ready(function() {
   $('.js-slider-2').slick(options);
   $('.js-slider-3').slick(options);
   $('.js-slider-4').slick(options);
-});
 
+<<<<<<< Updated upstream
 var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
@@ -203,3 +203,31 @@ function initMap() {
   var point = {lat: 50.412163, lng: 30.516648};
   var marker = new google.maps.Marker({position: point, map: map});
 };
+=======
+  function initMap() {
+    var mapOptions = {
+      zoom: 17,
+      scrollwheel: false,
+      fullscreenControl: false,
+      mapTypeControl:false,
+      streetViewControl:false,
+      center: new google.maps.LatLng(50.412163,30.516648),
+    };
+
+    var mapElement = document.getElementById('map');
+    var map = new google.maps.Map(mapElement, mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(50.412163,30.516648),
+      map: map,
+      title: 'Vukna',
+      // icon: '/img/svg/map-marker.svg',
+      animation: google.maps.Animation.DROP
+    });
+  };
+
+  $(window).on('load', function() {
+    $('#map').length && initMap();
+  });
+});
+>>>>>>> Stashed changes
